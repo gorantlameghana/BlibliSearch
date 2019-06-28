@@ -27,6 +27,9 @@ extension ViewController: UICollectionViewDataSource {
             guard let rating = responseProducts[indexPath.row].review?.rating else { return }
             productCell.productRating.attributedText = NSMutableAttributedString().starWithRating(rating: Float(rating), outOfTotal: 5, withFontSize: 30)
         }
+        else if responseProducts[indexPath.row].review?.count == 0 {
+            productCell.productRating.attributedText = nil
+        }
         if indexPath.row == responseProducts.count - 1, searchBool == false {
             spinner = showLoader(view: self.view)
         }
