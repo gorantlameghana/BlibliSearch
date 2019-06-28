@@ -14,14 +14,14 @@
         <scene sceneID="lZ9-NF-H5d">
             <objects>
                 <viewController id="D8I-Xa-A9E" customClass="ViewController" customModule="CollectionView" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="aAl-95-5NK">
+                    <view key="view" contentMode="scaleToFill" id="xeL-1L-Qdz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ha9-AO-fGt">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="q5D-fo-tOh">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eGt-bP-AvI">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="eqt-gH-iFe">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -32,18 +32,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ha9-AO-fGt" firstAttribute="top" secondItem="eWR-g4-c22" secondAttribute="top" id="Eik-ej-xtU"/>
-                            <constraint firstItem="ha9-AO-fGt" firstAttribute="leading" secondItem="eWR-g4-c22" secondAttribute="leading" id="eV1-eg-YSX"/>
-                            <constraint firstItem="eWR-g4-c22" firstAttribute="bottom" secondItem="ha9-AO-fGt" secondAttribute="bottom" id="efe-JO-hDZ"/>
-                            <constraint firstItem="eWR-g4-c22" firstAttribute="trailing" secondItem="ha9-AO-fGt" secondAttribute="trailing" id="tyh-Ro-KBj"/>
+                            <constraint firstItem="q5D-fo-tOh" firstAttribute="leading" secondItem="S34-5a-kZD" secondAttribute="leading" id="8Xn-3c-khM"/>
+                            <constraint firstItem="S34-5a-kZD" firstAttribute="trailing" secondItem="q5D-fo-tOh" secondAttribute="trailing" id="BsW-TH-cou"/>
+                            <constraint firstItem="q5D-fo-tOh" firstAttribute="top" secondItem="S34-5a-kZD" secondAttribute="top" id="nlm-qR-Li1"/>
+                            <constraint firstItem="S34-5a-kZD" firstAttribute="bottom" secondItem="q5D-fo-tOh" secondAttribute="bottom" id="pnc-kY-si6"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="eWR-g4-c22"/>
+                        <viewLayoutGuide key="safeArea" id="S34-5a-kZD"/>
                     </view>
                     <navigationItem key="navigationItem" id="wRC-eT-Iu8">
                         <nil key="title"/>
                     </navigationItem>
                     <connections>
-                        <outlet property="collectionViewController" destination="ha9-AO-fGt" id="A9u-ZS-BXv"/>
+                        <outlet property="collectionViewController" destination="q5D-fo-tOh" id="Gig-RD-0ce"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MBc-i2-WQD" userLabel="First Responder" sceneMemberID="firstResponder"/>

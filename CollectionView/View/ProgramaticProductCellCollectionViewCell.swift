@@ -56,5 +56,7 @@ class ProgramaticProductCellCollectionViewCell: UICollectionViewCell {
         productRating.leadingAnchor.constraint(equalTo: productImage.leadingAnchor, constant: 0).isActive = true
         productRating.trailingAnchor.constraint(equalTo: productImage.trailingAnchor, constant: 0).isActive = true
         productRating.bottomAnchor.constraint(equalTo: bottomAnchor, constant: -10).isActive = true
+        productRating.adjustsFontSizeToFitWidth = true
+        //productRating.setContentCompressionResistancePriority(UILayoutPriority(rawValue: 50), for: .horizontal)
     }
 }
